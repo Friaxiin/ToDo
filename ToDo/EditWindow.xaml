@@ -1,0 +1,28 @@
+﻿<Window x:Class="ToDo.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDo"
+        mc:Ignorable="d"
+        Title="EditWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="tytuł"/>
+        <TextBox x:Name="title"/>
+
+        <TextBlock Text="opis"/>
+        <TextBox x:Name="description"/>
+
+        <TextBlock Text="data zakończenia"/>
+        <DatePicker x:Name="deadline"/>
+
+        <TextBlock Text="priorytet"/>
+        <ComboBox x:Name="priority">
+            <ComboBoxItem Content="Niski"/>
+            <ComboBoxItem Content="Średni"/>
+            <ComboBoxItem Content="Wysoki"/>
+        </ComboBox>
+
+            <Button Content="Edytuj" Click="Edit"/>
+    </StackPanel>
+</Window>
