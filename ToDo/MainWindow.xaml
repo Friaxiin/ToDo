@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
         <TextBlock Text="Dodaj zadanie" FontSize="18"/>
+        <TextBlock Text="Dodaj zadanie" FontSize="5"/>
         <TextBlock Text="Tytuł"/>
         <TextBox x:Name="title"/>
 
